@@ -1,0 +1,21 @@
+{
+  "name": "todomvc-app",
+  "description": "The best project ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/addyo/todomvc-app",
+  "author": {
+    "name": "addyosmani"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/addyo/todomvc-app.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/addyo/todomvc-app/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {},
+  "keywords": []
+}
