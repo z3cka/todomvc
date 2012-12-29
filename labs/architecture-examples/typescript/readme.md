@@ -1,24 +1,26 @@
-﻿===== TypeScript Sample: Todo MVC =====
+﻿# TypeScript TodoMVC app
 
-=== Overview ===
 
-This sample shows an implementation of the Backbone.js TODO sample derived from 
-https://github.com/documentcloud/backbone/tree/master/examples/todos.  The following 
+## Overview
+
 TypeScript integration points are highlighted:
 - Backbone.js: Using TypeScript classes to create Backbone models and views
 - jQuery: Using jQuery for all DOM manipulation
 
 
-=== Running ===
-tsc js\todos.ts
+## Running
+```shell
+tsc js\app.ts
 open index.html
+```
 
-=== Caveats ===
+## Caveats
 
-This sample uses local storage and will not run properly on Internet Explore if run 
-from the local filesystem.  Instead, host the sample from a web server (eg. IIS).
+This sample uses localStorage and will not run properly on Internet Explore if run from the local filesystem. Instead, run the app from a web server.
 
-------------------------------------------------------------------------------------------
+
+## License
+
 Microsoft grants you the right to use these script files under the Apache 2.0 license. 
 Microsoft reserves all other rights to the files not expressly granted by Microsoft, 
 whether by implication, estoppel or otherwise. The copyright notices and MIT licenses 
