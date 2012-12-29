@@ -99,7 +99,7 @@ class Todo extends Backbone.Model {
     // Default attributes for the todo.
     defaults() {
         return {
-            content: "empty todo...",
+            content: '',
             done: false
         }
     };
