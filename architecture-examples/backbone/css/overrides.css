@@ -1,0 +1,4 @@
+#new-todo, .edit 	{ width: 90%; }
+#add-list::before 	{ content: '✍'; }
+#add-list 			{ font-size: 31px; vertical-align: top; }
+.under				{ font-size: 14px; }

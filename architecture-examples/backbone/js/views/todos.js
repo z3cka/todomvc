@@ -70,8 +70,6 @@ $(function() {
 
 		// Close the `"editing"` mode, saving changes to the todo.
 		close: function() {
-			// alert("bleh");
-			// console.log(this);
 			var value = this.input.val().trim();
 
 			if ( value ) {
