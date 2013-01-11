@@ -21,9 +21,9 @@ $(function() {
 			'dblclick label':	'edit',
 			'click .destroy':	'clear',
 			'keypress .edit':	'updateOnEnter',
-			// 'blur .edit':		'close',
+			'blur .edit':		'close'
 			// add when clicking the add button
-			'submit #add-list-form': 'close'
+			// 'submit #add-list-form': 'close'
 		},
 
 		// The TodoView listens for changes to its model, re-rendering. Since there's
@@ -70,7 +70,8 @@ $(function() {
 
 		// Close the `"editing"` mode, saving changes to the todo.
 		close: function() {
-			console.log(this);
+			// alert("bleh");
+			// console.log(this);
 			var value = this.input.val().trim();
 
 			if ( value ) {

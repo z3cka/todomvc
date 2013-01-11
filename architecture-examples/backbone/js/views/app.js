@@ -18,7 +18,9 @@ $(function( $ ) {
 
 		// Delegated events for creating new items, and clearing completed ones.
 		events: {
-			'keypress #new-todo': 'createOnEnter',
+			// 'keypress #new-todo': 'createOnEnter',
+			// creat new list on form submit
+			'submit #add-list-form': 'createOnEnter',
 			'click #clear-completed': 'clearCompleted',
 			'click #toggle-all': 'toggleAllComplete'
 		},
@@ -101,11 +103,23 @@ $(function( $ ) {
 		// If you hit return in the main input field, create new **Todo** model,
 		// persisting it to *localStorage*.
 		createOnEnter: function( e ) {
-			if ( e.which !== ENTER_KEY || !this.input.val().trim() ) {
-				return;
-			}
+			alert("add form submitted!");
+			// let's get the data from the form
+			var listDetail = $(e.currentTarget).serializeObject();
+			console.log(listDetail);
+			alert(listDetail.list_title);
+			// if ( e.which !== ENTER_KEY || !this.input.val().trim() ) {
+				// return;
+			// }
+			// deny a full page load
+ 			return false;
 
-			app.Todos.create( this.newAttributes() );
+ 			console.log(this.newAttributes());
+
+			// i think this creates the item...	
+			// app.Todos.create( this.newAttributes() );
+			app.Todos.create(listDetail);
+			// resets input form
 			this.input.val('');
 		},
 
